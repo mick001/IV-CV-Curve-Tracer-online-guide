@@ -1,4 +1,4 @@
-# This is the changelog of the IV & CV Curve Tracer
+# Changelog dell'IV & CV Curve Tracer
 
 ### DISCLAIMER
 Questo changelog era inteso per uso personale e quindi non è stato mantenuto in modo "eccellente". Siccome può comunque essere utile, ho deciso di inserirlo nella documentazione.
