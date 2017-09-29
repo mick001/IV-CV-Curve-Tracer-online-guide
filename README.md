@@ -104,7 +104,7 @@ Fig. 5.10 Instrument tab Yokogawa 7651
 4.	Si sceglie la sorgente di tensione Bias2 (polarizzazione dipendente) e si clicca sull’Insrument tab corrispondente. Nell’esempio, si sceglie lo strumento TTi QL355TP. Nella figura 5.11 è raffigurato il corrispondente Instrument tab. Si imposta il VISA resource name dello strumento, il canale che si intende utilizzare, il comportamento dello strumento nel caso in cui la corrente superi il limite di corrente erogabile e si fissa la corrente massima erogabile (20 mA nella figura 5.11).
 
  
-Fig. 5.11 Instrument tab TTi QL355TP
+Fig. 5.11 Instrument tab TTi QL355TP 
 
 
 Se si desidera tracciare più curve IV si eseguano le istruzioni ai punti 6, 7 e 8 della sezione 5.3 per il setup di uno o più amperometri, invece se si desidera tracciare una curva CV, si seguano le istruzioni ai punti 9, 10 e 11 della sezione 5.3 per il setup dello strumento Agilent 4263B.
