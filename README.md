@@ -22,4 +22,4 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 2.	Selezionare la nuova working directory dalla finestra di dialogo.
 3.	Cliccare su “Seleziona carella”.
 
-![Figura 5.2](https://www.dropbox.com/s/gh9x60zeaof3j6x/5.2.png?dl=0)
+![Figura 5.2](https://www.dropbox.com/s/gh9x60zeaof3j6x/5.2.png)
