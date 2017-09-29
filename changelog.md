@@ -5,7 +5,7 @@ Questo changelog era inteso per uso personale e quindi non è stato mantenuto in
 
 ---
 
-This part of the changelog covers the changes made from the version 1.0 to the version 2.0
+### Questo changelog copre parte dei cambiamenti effettuati dalla versione 1.0 alla versione 2.0.
 
 05/09/17
 + Accorpate funzioni IV DC sweep e CV DC sweep in una unico tab.
