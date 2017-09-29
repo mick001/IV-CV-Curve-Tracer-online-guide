@@ -7,7 +7,15 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0)
 
 + Leggere il [changelog](https://github.com/mick001/IV-CV-Curve-Tracer-online-guide/blob/master/changelog.md).
 + Ottenere il [file Excel](https://github.com/mick001/IV-CV-Curve-Tracer-online-guide/blob/master/TEST_CHECKLIST.xlsx) contenente le procedure di test da effettuare dopo ogni modifica sostanziale dell'applicazione al fine della verifica del corretto funzionamento della stessa.
-+ To read the user's operational guide, please scroll down.
++ Per leggere la guida operativa dell'applicazione, scorrere sotto.
+
+---
+
+## Cosa contiene questa guida
+
++ **Impostazione della working directory**
++ **Tracciamento curva IV/CV semplice**
++ **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione**
 
 ---
 
