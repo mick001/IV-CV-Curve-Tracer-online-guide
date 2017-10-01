@@ -129,6 +129,6 @@ Se si desidera tracciare più curve IV si eseguano le istruzioni ai punti 6, 7 e
 Fig. 5.12 Tab DC sweep: dettaglio sotto pannelli
 
 6.	Nel sotto pannello Single/double DC bias settings si seleziona la sorgente indipendente (Bias1) mediante il menu a tendina Bias1. Si sceglie la tensione di polarizzazione iniziale (Start bias [V]), la tensione di polarizzazione finale (Stop bias [V]) e l’incremento/decremento in valore assoluto (Step bias [V]). Nell’esempio si è scelto di utilizzare i valori 0 V, 0.5 V e 0.1 V rispettivamente. Se si è scelto di utilizzare anche la sorgente di polarizzazione dipendente (Bias2), si sceglie dal menu a tendina Bias2 la sorgente scelta al punto 4 e si definisce la formula per il calcolo della tensione di polarizzazione dipendente nel controllo Bias 2 formula y=f(x). Anche in questo caso è possibile predefinire l’array di tensioni da utilizzare per la sorgente principale e per la sorgente di polarizzazione indipendente e caricare i file mediante gli appositi controlli presenti nel tab DC sweep come descritto nella sezione 5.3.
-*7.*	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
+7.	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
 Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramente la funzione di misura esattamente come descritto al fondo della sezione 5.3.
 
