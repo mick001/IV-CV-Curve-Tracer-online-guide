@@ -31,6 +31,7 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 3.	Cliccare su “Seleziona carella”.
 
 ![Figura 5.2](https://user-images.githubusercontent.com/13961654/31053219-e392ff34-a698-11e7-81b5-bbae22098eb9.png)
+Fig. 5.2
 
 ---
 
@@ -40,7 +41,7 @@ Una volta avviato il programma, per tracciare una curva IV oppure una curva CV s
 1.	Si sceglie la sorgente di tensione principale (in questo caso tale sorgente sarà anche l’unica sorgente utilizzata) e si seleziona il corrispondente instrument tab. A titolo di esempio, si utilizza come sorgente di tensione principale lo strumento Keithley 6430.
 2.	Si seleziona dal menu a tendina VISA resource name Keithley 6430 (mostrato in figura 5.3) l’indirizzo GPIB dello strumento. Per visualizzare una lista degli indirizzi GPIB e seriali individuati dal programma è possibile utilizzare il controllo nel tab VISA resources del general pane descritto nella sezione 4.2. In ogni caso, anche il controllo VISA resource name Keithley 6430 nell’Instrument tab dello strumento mostrerà gli indirizzi GPIB e seriali disponibili.
 
- 
+ ![Fig. 5.3](https://user-images.githubusercontent.com/13961654/31053241-51c1fb90-a699-11e7-97dc-aace9a321e9e.png)
 Fig. 5.3 Dettaglio Instrument tab del Keithley 6430
 
 3.	Se lo strumento è in grado di funzionare sia da sorgente di tensione che di corrente, si seleziona la funzione DC volts. Ad eccezione dello strumento Yokogawa 7651, si è scelto di impedire a priori l’utilizzo degli strumenti come sorgenti di corrente e quindi, nel caso del Keithley 6430, non è necessario selezionare la funzione DC volts siccome è già selezionata di default.
@@ -52,23 +53,24 @@ Se si desidera tracciare una curva IV si eseguano le istruzioni ai punti 6, 7 e 
 6.	Si seleziona l’Instrument tab dello strumento scelto per l’utilizzo come amperometro. A titolo di esempio si utilizza lo strumento Keithley 6485.
 7.	Si seleziona dal controllo VISA resource name Keithley 6485 (mostrato in figura 5.4) l’indirizzo GPIB dello strumento.
 
- 
+![Fig. 5.4](https://user-images.githubusercontent.com/13961654/31053242-53451b8c-a699-11e7-9c6b-343b92f801f9.png)
 Fig. 5.4 Instrument tab del Keithley 6485
 
 8.	Si selezionano eventuali impostazioni aggiuntive dello strumento per la misura: autorange, tempo di integrazione, filtri digitali, funzioni matematiche, ecc… Si noti che è possibile utilizzare (al momento in cui viene scritto questo manuale) fino a 5 strumenti di misura (4 amperometri e 1’LCR meter) contemporaneamente. Per configurare ogni singolo amperometro è necessario ripetere, per ogni strumento, i punti 6, 7 e 8.
 9.	Si seleziona l’Instrument tab dello strumento Agilent 4263B. Si seleziona dal controllo VISA resource name Agilent 4263B (mostrato in figura 5.5) l’indirizzo GPIB dello strumento.
 
- 
+ ![Fig. 5.5](https://user-images.githubusercontent.com/13961654/31053243-54f89af8-a699-11e7-83ee-cd3cabbf8032.png)
 Fig. 5.5 Dettaglio Instrument tab Agilent 4263B
  
 10.	Si seleziona il livello e la frequenza del segnale di test, i parametri che si intende misurare, il tempo di misura, e la lunghezza del cavo utilizzato. Nell’esempio in figura 5.5 si è scelto di utilizzare un segnale di test pari a 20 mV con frequenza 100 Hz per la misura della capacità parallela equivalente e del fattore di perdita. Si è inoltre ritenuta trascurabile la lunghezza del cavo. Opzionalmente si possono impostare le funzioni matematiche sui due parametri di interesse.
 11.	Qualora si utilizzi una sorgente unipolare per effettuare il tracciamento della curva CV (essenzialmente, lo strumento ISEG NHQ223M oppure lo strumento CAEN DT540P), si colleghi il dispositivo di scarica al PC e si effettui un test di verifica del corretto funzionamento mediante il pulsante “TEST DISCHARGE DEVICE” presente nell’Instrument tab della sorgente unipolare dopo aver inserito l’indirizzo seriale del dispositivo nel controllo Discharge device VISA resource name (ISEG NHQ223M). A titolo di esempio, viene riportato l’Instrument tab dello strumento ISEG NHQ223M in figura 5.6. Qualora il test abbia avuto esito positivo, si fissa il tempo scelto per la scarica mediante il controllo Seconds to wait after discharge [s] e si può procedere oltre. Qualora il test abbia invece avuto esito negativo, si provi a disconnettere e riconnettere il dispositivo di scarica al PC e ripetere il test.
 
- 
+![Fig. 5.6](https://user-images.githubusercontent.com/13961654/31053245-56f3d764-a699-11e7-852a-56707dd6b1f5.png)
 Fig. 5.6 Dettaglio Instrument tab ISEG NHQ223M: in rosso il sotto pannello impostazioni e test del dispositivo di scarica
 
 12.	Si seleziona il tab DC Sweep. Nel sotto pannello Sweep voltage source settings si imposta come sorgente di tensione lo strumento Keithley 6430 (figura 5.5) mediante il controllo Set voltage source. Si imposta la tensione iniziale (Start [V]), la tensione finale (Stop [V]) e l’incremento/decremento in valore assoluto (Step [V]). Nell’esempio mostrato in figura 5.7, si è scelta una tensione iniziale di 0 V, una tensione finale di 100 V e un incremento di 10 V. Qualora si decida di fornire al programma i valori di tensione da applicare attraverso un file esterno, si inserisca il percorso del file nel controllo Vsource file (single column txt or csv file) e si selezioni la spunta Set Vsource using external file. Il file deve essere in formato .txt oppure .csv, avere una singola colonna di numeri e nessuno spazio in fondo.
- 
+
+![Fig. 5.7](https://user-images.githubusercontent.com/13961654/31053246-58e0494a-a699-11e7-9f7b-b4bbc6436d7f.png)
 Fig. 5.7 Dettaglio del tab DC Sweep
 
 13.	Si seleziona il tempo di attesa (in millisecondi) tra l’applicazione di tensione e la misura di corrente mediante il controllo Waiting time nel sotto pannello Timing settings. Eventualmente si imposta anche un timeout (in secondi). Nell’esempio si è scelto di non applicare nessun timeout e quindi il controllo Timeout time [s] è stato impostato al valore di default -1 corrispondente all’assenza di timeout. 
@@ -79,14 +81,16 @@ Fig. 5.7 Dettaglio del tab DC Sweep
 18.	Se lo si desidera, è possibile aggiungere alcune note nel controllo Notes.
 19.	Selezionare la spunta nel controllo Clear graphs before new sweep se si desidera eliminare dai grafici i dati di misure effettuate precedentemente (figura 5.8).
 20.	 Cliccare sul pulsante START DOUBLE IV SWEEP (figura 5.8): se i parametri immessi sono coerenti con le caratteristiche degli strumenti scelti comparirà una finestra con il riassunto dei parametri selezionati e la richiesta di conferma (figura 5.9). Nel caso in cui fossero presenti incongruenze tra i parametri scelti per la misura e gli strumenti selezionati, comparirà un messaggio di errore con informazioni utili per la correzione degli errori rilevati. Fino a quando gli errori non sono stati corretti, non è possibile avviare la funzione di misura.
- 
+
+![Fig. 5.8](https://user-images.githubusercontent.com/13961654/31053247-5b3bcc0a-a699-11e7-807a-5d738dfb11a6.png)
 Fig 5.8 Pulsanti di comando tab DC sweep
 
- 
+![Fig. 5.9](https://user-images.githubusercontent.com/13961654/31053248-5cc4a8d0-a699-11e7-8d9a-7d1a7d12104f.png)
 Fig 5.9 Finestra di conferma avvio della funzione di misura
 
 21.	Cliccare “OK” per avviare la funzione di misura, altrimenti cliccare su “Cancel” per tornare allo stato Idle.
 22.	Cliccando su “OK” si avvia la funzione di misura e il programma esegue i cicli di misura richiesti. Sul grafico corrispondente allo strumento di misura utilizzato, compariranno, istante per istante, i valori rilevati dallo strumento (oppure la loro media se si è attivata la media aritmetica al punto 16 di questa procedura).
+
 Qualora si intenda mettere in pausa la funzione di misura, si clicchi il pulsante PAUSE SWEEPING LOOP indicato in figura 5.8. Cliccando il pulsante, il programma terminerà l’iterazione corrente del ciclo for interno e metterà in pausa la funzione di misura: comparirà una finestra che richiederà se continuare oppure arrestare la funzione di misura.
 Nel caso in cui si voglia arrestare la funzione di misura prematuramente, si clicchi il pulsante STOP SWEEPING LOOP. Cliccando tale pulsante, il programma uscirà dal doppio ciclo for annidato e ritornerà in stato Idle dopo aver riportato gli strumenti in uno stato noto. I dati di misura vengono, in ogni caso, salvati ad ogni iterazione.
 
@@ -106,19 +110,19 @@ A questo punto, tenendo in considerazione le tre modalità di utilizzo delle sor
 
 3.	Si sceglie la sorgente di tensione Bias1 (polarizzazione indipendente) e si seleziona il corrispondente Instrument tab. In questo caso si seleziona lo strumento Yokogawa 7651. L’Instrument tab di tale strumento è raffigurato in figura 5.10. Si imposta il VISA resource name dello strumento mediante l’apposito controllo, il range di tensione nel quale lo si intende utilizzare (oppure si fissa tale controllo ad un valore arbitrario in volt e poi si sceglie l’autorange), e il limite di corrente massima erogabile. Nell’esempio in figura 5.10 il range di tensione è stato fissato a 10 V (lo strumento sarà in grado di erogare una tensione compresa tra -10 V e 10 V). Si è scelto infine di limitare la corrente erogabile a 1 mA.
 
- 
+![Fig. 5.10](https://user-images.githubusercontent.com/13961654/31053249-5f25ee72-a699-11e7-82aa-663a28452ab9.png)
 Fig. 5.10 Instrument tab Yokogawa 7651
 
 4.	Si sceglie la sorgente di tensione Bias2 (polarizzazione dipendente) e si clicca sull’Insrument tab corrispondente. Nell’esempio, si sceglie lo strumento TTi QL355TP. Nella figura 5.11 è raffigurato il corrispondente Instrument tab. Si imposta il VISA resource name dello strumento, il canale che si intende utilizzare, il comportamento dello strumento nel caso in cui la corrente superi il limite di corrente erogabile e si fissa la corrente massima erogabile (20 mA nella figura 5.11).
 
- 
+![Fig. 5.11](https://user-images.githubusercontent.com/13961654/31053250-6096ea40-a699-11e7-837a-646fc483c796.png)
 Fig. 5.11 Instrument tab TTi QL355TP 
 
 
 Se si desidera tracciare più curve IV si eseguano le istruzioni ai punti 6, 7 e 8 della sezione 5.3 per il setup di uno o più amperometri, invece se si desidera tracciare una curva CV, si seguano le istruzioni ai punti 9, 10 e 11 della sezione 5.3 per il setup dello strumento Agilent 4263B.
 5.	Si seleziona il tab DC Sweep. Nel sotto pannello Sweep voltage source settings si imposta come sorgente di tensione lo strumento Keithley 6430 mediante il controllo Set voltage source. Si imposta la tensione iniziale (Start [V]), la tensione finale (Stop [V]) e l’incremento/decremento in valore assoluto (Step [V]). Nell’esempio, in fig. 5.12, si è scelta una tensione iniziale di 0 V, una tensione finale di 10 V e un incremento di 0.5 V
 
- 
+![Fig. 5.12](https://user-images.githubusercontent.com/13961654/31053252-627cd0ae-a699-11e7-8129-7b43c7932c8e.png)
 Fig. 5.12 Tab DC sweep: dettaglio sotto pannelli
 
 6.	Nel sotto pannello Single/double DC bias settings si seleziona la sorgente indipendente (Bias1) mediante il menu a tendina Bias1. Si sceglie la tensione di polarizzazione iniziale (Start bias [V]), la tensione di polarizzazione finale (Stop bias [V]) e l’incremento/decremento in valore assoluto (Step bias [V]). Nell’esempio si è scelto di utilizzare i valori 0 V, 0.5 V e 0.1 V rispettivamente. Se si è scelto di utilizzare anche la sorgente di polarizzazione dipendente (Bias2), si sceglie dal menu a tendina Bias2 la sorgente scelta al punto 4 e si definisce la formula per il calcolo della tensione di polarizzazione dipendente nel controllo Bias 2 formula y=f(x). Anche in questo caso è possibile predefinire l’array di tensioni da utilizzare per la sorgente principale e per la sorgente di polarizzazione indipendente e caricare i file mediante gli appositi controlli presenti nel tab DC sweep come descritto nella sezione 5.3.
