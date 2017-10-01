@@ -18,6 +18,7 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0)
 + **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione**
 
 ---
+---
 
 ## Impostazione della working directory
 
@@ -33,6 +34,7 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 ![Figura 5.2](https://user-images.githubusercontent.com/13961654/31053219-e392ff34-a698-11e7-81b5-bbae22098eb9.png)
 Fig. 5.2
 
+---
 ---
 
 ## Tracciamento curva IV/CV semplice
@@ -94,6 +96,7 @@ Fig 5.9 Finestra di conferma avvio della funzione di misura
 Qualora si intenda mettere in pausa la funzione di misura, si clicchi il pulsante PAUSE SWEEPING LOOP indicato in figura 5.8. Cliccando il pulsante, il programma terminerà l’iterazione corrente del ciclo for interno e metterà in pausa la funzione di misura: comparirà una finestra che richiederà se continuare oppure arrestare la funzione di misura.
 Nel caso in cui si voglia arrestare la funzione di misura prematuramente, si clicchi il pulsante STOP SWEEPING LOOP. Cliccando tale pulsante, il programma uscirà dal doppio ciclo for annidato e ritornerà in stato Idle dopo aver riportato gli strumenti in uno stato noto. I dati di misura vengono, in ogni caso, salvati ad ogni iterazione.
 
+---
 ---
 
 ## Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione
