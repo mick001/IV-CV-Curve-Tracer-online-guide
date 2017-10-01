@@ -1,5 +1,5 @@
 # IV & CV Curve Tracer online guide
-A set of operational guides for the IV &amp; CV curve tracer (V. 2.0)
+A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 
 ---
 
@@ -13,14 +13,14 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0)
 
 ## Cosa contiene questa guida
 
-+ **Impostazione della working directory**
-+ **Tracciamento curva IV/CV semplice**
-+ **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione**
++ **Impostazione della working directory.**
++ **Tracciamento curva IV/CV semplice.**
++ **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione.**
 
 ---
 ---
 
-## Impostazione della working directory
+## Impostazione della working directory (sezione 5.2 del manuale)
 
 Ad ogni avvio, il programma utilizzerà di default la cartella data sul desktop dell’utente come working directory. Se la cartella C:/users/user/Desktop/data esiste già, il programma utilizzerà tale cartella, se invece non esiste, il programma la creerà.
 
@@ -37,7 +37,7 @@ Fig. 5.2
 ---
 ---
 
-## Tracciamento curva IV/CV semplice
+## Tracciamento curva IV/CV semplice (sezione 5.3 del manuale)
 
 Una volta avviato il programma, per tracciare una curva IV oppure una curva CV senza l’utilizzo di sorgenti di polarizzazione (ossia eseguendo il solo ciclo for interno), la procedura operativa alla quale attenersi è la seguente:
 1.	Si sceglie la sorgente di tensione principale (in questo caso tale sorgente sarà anche l’unica sorgente utilizzata) e si seleziona il corrispondente instrument tab. A titolo di esempio, si utilizza come sorgente di tensione principale lo strumento Keithley 6430.
@@ -99,7 +99,7 @@ Nel caso in cui si voglia arrestare la funzione di misura prematuramente, si cli
 ---
 ---
 
-## Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione
+## Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione (sezione 5.4 del manuale)
 
 Si ricorda che delle due sorgenti di polarizzazione disponibili, una sola è indipendente. La sorgente dipendente dipende dall’array lineare di tensioni definito per la sorgente indipendente. Utilizzando la nomenclatura dei controlli delle sorgenti di polarizzazione del tab DC sweep, nel seguito si chiamerà la sorgente indipendente Bias1 e la sorgente dipendente Bias2. I casi possibili sono i seguenti tre:
 1.	Bias1 è utilizzata e Bias2 non è utilizzata. Si applica una singola polarizzazione (indipendente) al DUT.
@@ -123,12 +123,12 @@ Fig. 5.11 Instrument tab TTi QL355TP
 
 
 Se si desidera tracciare più curve IV si eseguano le istruzioni ai punti 6, 7 e 8 della sezione 5.3 per il setup di uno o più amperometri, invece se si desidera tracciare una curva CV, si seguano le istruzioni ai punti 9, 10 e 11 della sezione 5.3 per il setup dello strumento Agilent 4263B.
-5.	Si seleziona il tab DC Sweep. Nel sotto pannello Sweep voltage source settings si imposta come sorgente di tensione lo strumento Keithley 6430 mediante il controllo Set voltage source. Si imposta la tensione iniziale (Start [V]), la tensione finale (Stop [V]) e l’incremento/decremento in valore assoluto (Step [V]). Nell’esempio, in fig. 5.12, si è scelta una tensione iniziale di 0 V, una tensione finale di 10 V e un incremento di 0.5 V
+5.	Si seleziona il tab DC Sweep. Nel sotto pannello Sweep voltage source settings si imposta come sorgente di tensione lo strumento Keithley 6430 mediante il controllo Set voltage source. Si imposta la tensione iniziale (Start [V]), la tensione finale (Stop [V]) e l’incremento/decremento in valore assoluto (Step [V]). Nell’esempio, in fig. 5.12, si è scelta una tensione iniziale di 0 V, una tensione finale di 10 V e una variazione di 0.5 V.
 
 ![Fig. 5.12](https://user-images.githubusercontent.com/13961654/31053252-627cd0ae-a699-11e7-8129-7b43c7932c8e.png)
 Fig. 5.12 Tab DC sweep: dettaglio sotto pannelli
 
 6.	Nel sotto pannello Single/double DC bias settings si seleziona la sorgente indipendente (Bias1) mediante il menu a tendina Bias1. Si sceglie la tensione di polarizzazione iniziale (Start bias [V]), la tensione di polarizzazione finale (Stop bias [V]) e l’incremento/decremento in valore assoluto (Step bias [V]). Nell’esempio si è scelto di utilizzare i valori 0 V, 0.5 V e 0.1 V rispettivamente. Se si è scelto di utilizzare anche la sorgente di polarizzazione dipendente (Bias2), si sceglie dal menu a tendina Bias2 la sorgente scelta al punto 4 e si definisce la formula per il calcolo della tensione di polarizzazione dipendente nel controllo Bias 2 formula y=f(x). Anche in questo caso è possibile predefinire l’array di tensioni da utilizzare per la sorgente principale e per la sorgente di polarizzazione indipendente e caricare i file mediante gli appositi controlli presenti nel tab DC sweep come descritto nella sezione 5.3.
-7.	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
+*7.*	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
 Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramente la funzione di misura esattamente come descritto al fondo della sezione 5.3.
 
