@@ -31,7 +31,7 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 2.	Selezionare la nuova working directory dalla finestra di dialogo.
 3.	Cliccare su “Seleziona carella”.
 
-    ![Figura 5.2](https://user-images.githubusercontent.com/13961654/31053219-e392ff34-a698-11e7-81b5-bbae22098eb9.png)\s\s
+    ![Figura 5.2](https://user-images.githubusercontent.com/13961654/31053219-e392ff34-a698-11e7-81b5-bbae22098eb9.png)  
     Fig. 5.2 General pane, dettaglio del general panel
 
 ---
