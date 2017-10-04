@@ -1,14 +1,14 @@
 # Changelog dell'IV & CV Curve Tracer
 
 ### DISCLAIMER
-Questo changelog era inteso per uso personale e quindi non è stato mantenuto in modo "eccellente". Siccome può comunque essere utile, ho deciso di inserirlo nella documentazione.
+Questo changelog era inteso per uso personale e quindi non è stato mantenuto in modo "eccellente". Siccome può comunque essere utile, ho deciso di inserirlo nella documentazione. Sono riportate le modifiche più importanti per ogni data.
 
 ---
 
 ### Questo changelog copre parte dei cambiamenti effettuati dalla versione 1.0 alla versione 2.0.
 
 05/09/17
-+ Accorpate funzioni IV DC sweep e CV DC sweep in una unico tab.
++ Accorpate funzioni IV DC sweep, double IV DC sweep, e CV DC sweep in un unico tab.
 
 06/09/17
 + Sistemato bug nella generazione del report.
