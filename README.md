@@ -42,7 +42,6 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 Una volta avviato il programma, per tracciare una curva IV oppure una curva CV senza l’utilizzo di sorgenti di polarizzazione (ossia eseguendo il solo ciclo for interno), la procedura operativa alla quale attenersi è la seguente:
 1.	Si sceglie la sorgente di tensione principale (in questo caso tale sorgente sarà anche l’unica sorgente utilizzata) e si seleziona il corrispondente instrument tab. A titolo di esempio, si utilizza come sorgente di tensione principale lo strumento Keithley 6430.
 2.	Si seleziona dal menu a tendina VISA resource name Keithley 6430 (mostrato in figura 5.3) l’indirizzo GPIB dello strumento. Per visualizzare una lista degli indirizzi GPIB e seriali individuati dal programma è possibile utilizzare il controllo nel tab VISA resources del general pane descritto nella sezione 4.2. In ogni caso, anche il controllo VISA resource name Keithley 6430 nell’Instrument tab dello strumento mostrerà gli indirizzi GPIB e seriali disponibili.
-
     ![Fig. 5.3](https://user-images.githubusercontent.com/13961654/31053241-51c1fb90-a699-11e7-97dc-aace9a321e9e.png)
     Fig. 5.3 Dettaglio Instrument tab del Keithley 6430
 
