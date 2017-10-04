@@ -48,10 +48,7 @@ Fig. 5.3 Dettaglio Instrument tab del Keithley 6430
 
 3.	Se lo strumento è in grado di funzionare sia da sorgente di tensione che di corrente, si seleziona la funzione DC volts. Ad eccezione dello strumento Yokogawa 7651, si è scelto di impedire a priori l’utilizzo degli strumenti come sorgenti di corrente e quindi, nel caso del Keithley 6430, non è necessario selezionare la funzione DC volts siccome è già selezionata di default.
 4.	Si imposta la corrente massima erogabile dallo strumento tramite il controllo Current Compliance [A]. In figura 5.3 il limite di corrente è stato fissato pari a 10 mA.
-5.	Si selezionano eventuali impostazioni aggiuntive, specifiche dello strumento (ad esempio: canale, range della tensione di output, ecc…).
-
-Se si desidera tracciare una curva IV si eseguano le istruzioni ai punti 6, 7 e 8 saltando le istruzioni ai punti 9, 10 e 11 mentre se si desidera tracciare una curva CV, si saltino le istruzioni ai punti 6, 7 e 8.
-
+5.	Si selezionano eventuali impostazioni aggiuntive, specifiche dello strumento (ad esempio: canale, range della tensione di output, ecc…).Se si desidera tracciare una curva IV si eseguano le istruzioni ai punti 6, 7 e 8 saltando le istruzioni ai punti 9, 10 e 11 mentre se si desidera tracciare una curva CV, si saltino le istruzioni ai punti 6, 7 e 8.
 6.	Si seleziona l’Instrument tab dello strumento scelto per l’utilizzo come amperometro. A titolo di esempio si utilizza lo strumento Keithley 6485.
 7.	Si seleziona dal controllo VISA resource name Keithley 6485 (mostrato in figura 5.4) l’indirizzo GPIB dello strumento.
 
