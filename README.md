@@ -85,10 +85,8 @@ Una volta avviato il programma, per tracciare una curva IV oppure una curva CV s
 18.	Se lo si desidera, è possibile aggiungere alcune note nel controllo Notes.
 19.	Selezionare la spunta nel controllo Clear graphs before new sweep se si desidera eliminare dai grafici i dati di misure effettuate precedentemente (figura 5.8).
 20.	 Cliccare sul pulsante START DOUBLE IV SWEEP (figura 5.8): se i parametri immessi sono coerenti con le caratteristiche degli strumenti scelti comparirà una finestra con il riassunto dei parametri selezionati e la richiesta di conferma (figura 5.9). Nel caso in cui fossero presenti incongruenze tra i parametri scelti per la misura e gli strumenti selezionati, comparirà un messaggio di errore con informazioni utili per la correzione degli errori rilevati. Fino a quando gli errori non sono stati corretti, non è possibile avviare la funzione di misura.
-
     ![Fig. 5.8](https://user-images.githubusercontent.com/13961654/31053247-5b3bcc0a-a699-11e7-807a-5d738dfb11a6.png)
     Fig 5.8 Pulsanti di comando tab DC sweep
-
     ![Fig. 5.9](https://user-images.githubusercontent.com/13961654/31053248-5cc4a8d0-a699-11e7-8d9a-7d1a7d12104f.png)
     Fig 5.9 Finestra di conferma avvio della funzione di misura
 
