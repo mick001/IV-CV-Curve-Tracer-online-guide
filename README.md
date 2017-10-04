@@ -85,9 +85,9 @@ Una volta avviato il programma, per tracciare una curva IV oppure una curva CV s
 18.	Se lo si desidera, è possibile aggiungere alcune note nel controllo Notes.
 19.	Selezionare la spunta nel controllo Clear graphs before new sweep se si desidera eliminare dai grafici i dati di misure effettuate precedentemente (figura 5.8).
 20.	 Cliccare sul pulsante START DOUBLE IV SWEEP (figura 5.8): se i parametri immessi sono coerenti con le caratteristiche degli strumenti scelti comparirà una finestra con il riassunto dei parametri selezionati e la richiesta di conferma (figura 5.9). Nel caso in cui fossero presenti incongruenze tra i parametri scelti per la misura e gli strumenti selezionati, comparirà un messaggio di errore con informazioni utili per la correzione degli errori rilevati. Fino a quando gli errori non sono stati corretti, non è possibile avviare la funzione di misura.
-    ![Fig. 5.8](https://user-images.githubusercontent.com/13961654/31053247-5b3bcc0a-a699-11e7-807a-5d738dfb11a6.png)
+    ![Fig. 5.8](https://user-images.githubusercontent.com/13961654/31053247-5b3bcc0a-a699-11e7-807a-5d738dfb11a6.png)  
     Fig 5.8 Pulsanti di comando tab DC sweep
-    ![Fig. 5.9](https://user-images.githubusercontent.com/13961654/31053248-5cc4a8d0-a699-11e7-8d9a-7d1a7d12104f.png)
+    ![Fig. 5.9](https://user-images.githubusercontent.com/13961654/31053248-5cc4a8d0-a699-11e7-8d9a-7d1a7d12104f.png)  
     Fig 5.9 Finestra di conferma avvio della funzione di misura
 
 21.	Cliccare “OK” per avviare la funzione di misura, altrimenti cliccare su “Cancel” per tornare allo stato Idle.
@@ -106,24 +106,24 @@ Si ricorda che delle due sorgenti di polarizzazione disponibili, una sola è ind
 2.	Bias1 è utilizzata e anche Bias2 è utilizzata: i valori di tensione applicati al DUT da Bias2 sono funzione dei valori di tensione applicati al DUT da Bias1. Sia Bias1 che Bias2 sono utilizzati, si applica quindi una doppia polarizzazione al DUT.
 3.	Bias1 non è utilizzata e Bias2 è utilizzata: i valori di tensione applicati al DUT da Bias2 sono funzione dei valori di tensione che Bias1 dovrebbe applicare al DUT se fosse utilizzata. Ma Bias1 non viene utilizzata: si applica quindi una singola polarizzazione al DUT tramite Bias2. Mediante questo metodo è possibile applicare una polarizzazione che cresce/decresce, per esempio, esponenzialmente oppure in modo logaritmico.
 
-Per tracciare più curve IV/CV al variare di una o due tensioni di polarizzazione, la procedura operativa è la seguente:
+**Per tracciare più curve IV/CV al variare di una o due tensioni di polarizzazione, la procedura operativa è la seguente:**
 1.	Si sceglie la sorgente di tensione principale e si seleziona il corrispondente Instrument tab. A titolo di esempio, si utilizza come sorgente di tensione principale nuovamente lo strumento Keithley 6430.
 2.	Si seguono le istruzioni per il set-up dello strumento indicate nei punti 2, 3, 4 e 5 della procedura contenuta nella sezione 5.3.
 
     **A questo punto, tenendo in considerazione le tre modalità di utilizzo delle sorgenti di polarizzazione Bias1 e Bias2 si decide quante e quali sorgenti di polarizzazione utilizzare. Nel punto 3 viene effettuato il setting di uno strumento per applicare la polarizzazione indipendente (Bias1) mentre nel punto 4 viene effettuato il setting di uno strumento per applicare la polarizzazione dipendente (Bias2). Si scelga quali punti saltare coerentemente con il tipo di polarizzazione che si intende applicare al DUT.**
 
 3.	Si sceglie la sorgente di tensione Bias1 (polarizzazione indipendente) e si seleziona il corrispondente Instrument tab. In questo caso si seleziona lo strumento Yokogawa 7651. L’Instrument tab di tale strumento è raffigurato in figura 5.10. Si imposta il VISA resource name dello strumento mediante l’apposito controllo, il range di tensione nel quale lo si intende utilizzare (oppure si fissa tale controllo ad un valore arbitrario in volt e poi si sceglie l’autorange), e il limite di corrente massima erogabile. Nell’esempio in figura 5.10 il range di tensione è stato fissato a 10 V (lo strumento sarà in grado di erogare una tensione compresa tra -10 V e 10 V). Si è scelto infine di limitare la corrente erogabile a 1 mA.
-    ![Fig. 5.10](https://user-images.githubusercontent.com/13961654/31053249-5f25ee72-a699-11e7-82aa-663a28452ab9.png)
+    ![Fig. 5.10](https://user-images.githubusercontent.com/13961654/31053249-5f25ee72-a699-11e7-82aa-663a28452ab9.png)  
     Fig. 5.10 Instrument tab Yokogawa 7651
 
 4.	Si sceglie la sorgente di tensione Bias2 (polarizzazione dipendente) e si clicca sull’Insrument tab corrispondente. Nell’esempio, si sceglie lo strumento TTi QL355TP. Nella figura 5.11 è raffigurato il corrispondente Instrument tab. Si imposta il VISA resource name dello strumento, il canale che si intende utilizzare, il comportamento dello strumento nel caso in cui la corrente superi il limite di corrente erogabile e si fissa la corrente massima erogabile (20 mA nella figura 5.11).
-    ![Fig. 5.11](https://user-images.githubusercontent.com/13961654/31053250-6096ea40-a699-11e7-837a-646fc483c796.png)
+    ![Fig. 5.11](https://user-images.githubusercontent.com/13961654/31053250-6096ea40-a699-11e7-837a-646fc483c796.png)  
     Fig. 5.11 Instrument tab TTi QL355TP 
 
     **Se si desidera tracciare più curve IV si eseguano le istruzioni ai punti 6, 7 e 8 della sezione 5.3 per il setup di uno o più amperometri, invece se si desidera tracciare una curva CV, si seguano le istruzioni ai punti 9, 10 e 11 della sezione 5.3 per il setup dello strumento Agilent 4263B.**
 
 5.	Si seleziona il tab DC Sweep. Nel sotto pannello Sweep voltage source settings si imposta come sorgente di tensione lo strumento Keithley 6430 mediante il controllo Set voltage source. Si imposta la tensione iniziale (Start [V]), la tensione finale (Stop [V]) e l’incremento/decremento in valore assoluto (Step [V]). Nell’esempio, in fig. 5.12, si è scelta una tensione iniziale di 0 V, una tensione finale di 10 V e una variazione di 0.5 V.
-    ![Fig. 5.12](https://user-images.githubusercontent.com/13961654/31053252-627cd0ae-a699-11e7-8129-7b43c7932c8e.png)
+    ![Fig. 5.12](https://user-images.githubusercontent.com/13961654/31053252-627cd0ae-a699-11e7-8129-7b43c7932c8e.png)  
     
     Fig. 5.12 Tab DC sweep: dettaglio sotto pannelli
 
