@@ -121,7 +121,7 @@ Si ricorda che delle due sorgenti di polarizzazione disponibili, una sola è ind
     ![Fig. 5.10](https://user-images.githubusercontent.com/13961654/31053249-5f25ee72-a699-11e7-82aa-663a28452ab9.png)  
     Fig. 5.10 Instrument tab Yokogawa 7651
 
-4.	Si sceglie la sorgente di tensione Bias2 (polarizzazione dipendente) e si clicca sull’Insrument tab corrispondente. Nell’esempio, si sceglie lo strumento TTi QL355TP. Nella figura 5.11 è raffigurato il corrispondente Instrument tab. Si imposta il VISA resource name dello strumento, il canale che si intende utilizzare, il comportamento dello strumento nel caso in cui la corrente superi il limite di corrente erogabile e si fissa la corrente massima erogabile (20 mA nella figura 5.11).  
+4.	Si sceglie la sorgente di tensione Bias2 (polarizzazione dipendente) e si clicca sull’Instrument tab corrispondente. Nell’esempio, si sceglie lo strumento TTi QL355TP. Nella figura 5.11 è raffigurato il corrispondente Instrument tab. Si imposta il VISA resource name dello strumento, il canale che si intende utilizzare, il comportamento dello strumento nel caso in cui la corrente superi il limite di corrente erogabile e si fissa la corrente massima erogabile (20 mA nella figura 5.11).  
     ![Fig. 5.11](https://user-images.githubusercontent.com/13961654/31053250-6096ea40-a699-11e7-837a-646fc483c796.png)  
     Fig. 5.11 Instrument tab TTi QL355TP 
 
@@ -142,10 +142,10 @@ Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramen
 
 Di seguito un elenco di misurazioni effettuate:
 
-+ Caratteristica IV LED rosso 5 mm.
-+ Caratteristiche I~DS~V~DS~ N-Channel JFET BF862.
-+ Curve CV e δV condensatori realizzati in diversi materiali.
-+ Curve C~GS~V~GS~ e δV~GS~ N-Channel JFET BF862 e 2N4416.
++ [Caratteristica IV LED rosso 5 mm.](caratteristica-iv-led-rosso-5-mm)
++ [Caratteristiche I~DS~V~DS~ N-Channel JFET BF862.]()
++ [Caratteristiche CV e δV condensatori realizzati in diversi materiali.]()
++ [Caratteristiche C~GS~V~GS~ e δV~GS~ N-Channel JFET BF862 e 2N4416.]()
 
 ---
 ---
@@ -161,7 +161,10 @@ La caratteristica è stata tracciata utilizzando le seguenti impostazioni:
 - Numero punti media: 1 (singola misurazione).
 - Tempo di attesa: 1 s.
 
+**Circuito di misura**
 ![RED LED circuit](https://user-images.githubusercontent.com/13961654/32105534-1a9b9898-bb29-11e7-8a81-aa9f589b9aa3.png)
+
+**Risultati misurazione**
 ![RED LED characteristic](https://user-images.githubusercontent.com/13961654/32105188-e44d7b5e-bb27-11e7-908d-9a450147acb6.png)
 
 ---
@@ -178,13 +181,16 @@ Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
 - Amperometro utilizzato per misurare la Ids: Keithley 6487 in modalità autorange. Prima di iniziare la misura è stata effettuata la zero correction (si ricorda che tale correzione è effettuata di default dal programma per gli amperometri). 
 - Numero punti media: 1 (singola misurazione).
 
+**Circuito di misura**
 ![IV JFET circuit](https://user-images.githubusercontent.com/13961654/32105546-252b2e18-bb29-11e7-8b5b-37d40de9e884.png)
+
+**Risultati misurazione**
 ![IV JFET results](https://user-images.githubusercontent.com/13961654/32105228-0cf079bc-bb28-11e7-9ff1-e61e2bfe9450.png)
 
 ---
 ---
 
-## Curve CV e δV condensatori.
+## Caratteristiche CV e δV condensatori.
 
 Si riportano le caratteristiche CV e delta δV (δ è il fattore di perdita) dei seguenti tipi di condensatori:
 
