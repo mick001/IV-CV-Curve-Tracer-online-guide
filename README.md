@@ -143,9 +143,9 @@ Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramen
 Di seguito un elenco di misurazioni effettuate:
 
 + [Caratteristica IV LED rosso 5 mm.](caratteristica-iv-led-rosso-5-mm)
-+ [Caratteristiche I~DS~V~DS~ N-Channel JFET BF862.]()
-+ [Caratteristiche CV e δV condensatori realizzati in diversi materiali.]()
-+ [Caratteristiche C~GS~V~GS~ e δV~GS~ N-Channel JFET BF862 e 2N4416.]()
++ [Caratteristiche Ids Vds N-Channel JFET BF862.]()
++ [Caratteristiche CV e δV condensatori realizzati in diversi materiali.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-cv-e-%CE%B4v-condensatori)
++ [Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416.]()
 
 ---
 ---
@@ -170,13 +170,13 @@ La caratteristica è stata tracciata utilizzando le seguenti impostazioni:
 ---
 ---
 
-## Caratteristiche I~DS~V~DS~ N-Channel JFET BF862
+## Caratteristiche Ids Vds N-Channel JFET BF862
 
-Si riportano i risultati del tracciamento di un tratto della caratteristica I~DS~V~DS~ al variare della tensione di polarizzazione V~GS~, nel primo quadrante del dispositivo N-Channel JFET BF862. Nella misura si è trascurata la corrente I~GS~.
+Si riportano i risultati del tracciamento di un tratto della caratteristica Ids Vds al variare della tensione di polarizzazione Vds, nel primo quadrante del dispositivo N-Channel JFET BF862. Nella misura si è trascurata la corrente Igs.
 Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
-- Sorgente di tensione principale utilizzata per imporre la V~DS~: TTi QL355TP (limite di corrente fissato a 20 mA).
+- Sorgente di tensione principale utilizzata per imporre la Vds: TTi QL355TP (limite di corrente fissato a 20 mA).
 - Vds iniziale, finale e sua variazione: 0, 10 e 0.1 V.
-- Sorgente di polarizzazione utilizzata per imporre la V~GS~: Yokogawa 7651 (limite di corrente fissato a 20 mA).
+- Sorgente di polarizzazione utilizzata per imporre la Vgs: Yokogawa 7651 (limite di corrente fissato a 20 mA).
 - Vgs iniziale, finale e sua variazione: 0, -0.5 e 0.1 V.
 - Amperometro utilizzato per misurare la Ids: Keithley 6487 in modalità autorange. Prima di iniziare la misura è stata effettuata la zero correction (si ricorda che tale correzione è effettuata di default dal programma per gli amperometri). 
 - Numero punti media: 1 (singola misurazione).
@@ -239,3 +239,9 @@ Il circuito di misura utilizzato, comune a tutti i condensatori testati è il se
 ---
 ---
 
+## Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416
+
+
+
+---
+---
