@@ -9,7 +9,8 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 
 + Leggere il [changelog](https://github.com/mick001/IV-CV-Curve-Tracer-online-guide/blob/master/changelog.md).
 + Ottenere il [file Excel](https://github.com/mick001/IV-CV-Curve-Tracer-online-guide/blob/master/TEST_CHECKLIST.xlsx) contenente le procedure di test da effettuare dopo ogni modifica sostanziale dell'applicazione al fine della verifica del corretto funzionamento della stessa.
-+ Per leggere la guida operativa dell'applicazione, scorrere sotto.
++ Leggere la [guida operativa](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#cosa-contiene-questa-guida) dell'applicazione.
++ Visualizzare [esempi di misure effettuate](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate).
 
 ---
 
@@ -131,3 +132,8 @@ Si ricorda che delle due sorgenti di polarizzazione disponibili, una sola è ind
 6.	Nel sotto pannello Single/double DC bias settings si seleziona la sorgente indipendente (Bias1) mediante il menu a tendina Bias1. Si sceglie la tensione di polarizzazione iniziale (Start bias [V]), la tensione di polarizzazione finale (Stop bias [V]) e l’incremento/decremento in valore assoluto (Step bias [V]). Nell’esempio si è scelto di utilizzare i valori 0 V, 0.5 V e 0.1 V rispettivamente. Se si è scelto di utilizzare anche la sorgente di polarizzazione dipendente (Bias2), si sceglie dal menu a tendina Bias2 la sorgente scelta al punto 4 e si definisce la formula per il calcolo della tensione di polarizzazione dipendente nel controllo Bias 2 formula y=f(x). Anche in questo caso è possibile predefinire l’array di tensioni da utilizzare per la sorgente principale e per la sorgente di polarizzazione indipendente e caricare i file mediante gli appositi controlli presenti nel tab DC sweep come descritto nella sezione 5.3.
 7.	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
 Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramente la funzione di misura esattamente come descritto al fondo della sezione 5.3.
+
+---
+---
+
+## Esempi di misure effettuate
