@@ -39,6 +39,10 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
     ![Figura 5.2](https://user-images.githubusercontent.com/13961654/31053219-e392ff34-a698-11e7-81b5-bbae22098eb9.png)  
     Fig. 5.2 General pane, dettaglio del general panel
 
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Cosa contiene questa guida".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#cosa-contiene-questa-guida)
+
 ---
 ---
 
@@ -101,6 +105,10 @@ Una volta avviato il programma, per tracciare una curva IV oppure una curva CV s
 Qualora si intenda mettere in pausa la funzione di misura, si clicchi il pulsante PAUSE SWEEPING LOOP indicato in figura 5.8. Cliccando il pulsante, il programma terminerà l’iterazione corrente del ciclo for interno e metterà in pausa la funzione di misura: comparirà una finestra che richiederà se continuare oppure arrestare la funzione di misura.
 Nel caso in cui si voglia arrestare la funzione di misura prematuramente, si clicchi il pulsante STOP SWEEPING LOOP. Cliccando tale pulsante, il programma uscirà dal doppio ciclo for annidato e ritornerà in stato Idle dopo aver riportato gli strumenti in uno stato noto. I dati di misura vengono, in ogni caso, salvati ad ogni iterazione.
 
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Cosa contiene questa guida".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#cosa-contiene-questa-guida)
+
 ---
 ---
 
@@ -135,6 +143,10 @@ Si ricorda che delle due sorgenti di polarizzazione disponibili, una sola è ind
 7.	Si seguono le istruzioni indicate a partire dal punto 13 (incluso) nella sezione 5.3.
 Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramente la funzione di misura esattamente come descritto al fondo della sezione 5.3.
 
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Cosa contiene questa guida".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#cosa-contiene-questa-guida)
+
 ---
 ---
 
@@ -167,6 +179,10 @@ La caratteristica è stata tracciata utilizzando le seguenti impostazioni:
 **Risultati misurazione**
 ![RED LED characteristic](https://user-images.githubusercontent.com/13961654/32105188-e44d7b5e-bb27-11e7-908d-9a450147acb6.png)
 
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Esempi di misure effettuate".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate)
+
 ---
 ---
 
@@ -186,6 +202,10 @@ Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
 
 **Risultati misurazione**
 ![IV JFET results](https://user-images.githubusercontent.com/13961654/32105228-0cf079bc-bb28-11e7-9ff1-e61e2bfe9450.png)
+
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Esempi di misure effettuate".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate)
 
 ---
 ---
@@ -236,6 +256,10 @@ Il circuito di misura utilizzato, comune a tutti i condensatori testati è il se
 **Condensatore X7R 100nF**
 ![X7R 100n capacitor](https://user-images.githubusercontent.com/13961654/32105435-c2745286-bb28-11e7-81d5-a6601a1a456f.png)
 
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Esempi di misure effettuate".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate)
+
 ---
 ---
 
@@ -275,6 +299,10 @@ Questa misura ha presentato una notevole criticità per quanto riguarda la corre
 
 **Caratteristiche Cgs Vgs e δVgs N-JFET 2N4416**
 ![Risultati 2N4416](https://user-images.githubusercontent.com/13961654/32105444-ccb61f7c-bb28-11e7-8677-e1d8cc74ec85.png)
+
+
+[Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+[Torna al menu "Esempi di misure effettuate".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate)
 
 ---
 ---
