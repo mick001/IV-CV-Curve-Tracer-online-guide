@@ -143,9 +143,9 @@ Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramen
 Di seguito un elenco di misurazioni effettuate:
 
 + Caratteristica IV LED rosso 5 mm.
-+ Caratteristiche I~DS~V~DS~ N-Channel JFET BF862
-+ Curve CV e delta V condensatori.
-+ Curve C~GS~V~GS~ e delta V~GS~ N-Channel JFET BF862 e 2N4416.
++ Caratteristiche I~DS~V~DS~ N-Channel JFET BF862.
++ Curve CV e δV condensatori realizzati in diversi materiali.
++ Curve C~GS~V~GS~ e δV~GS~ N-Channel JFET BF862 e 2N4416.
 
 ---
 ---
@@ -165,6 +165,7 @@ La caratteristica è stata tracciata utilizzando le seguenti impostazioni:
 ![RED LED characteristic](https://user-images.githubusercontent.com/13961654/32105188-e44d7b5e-bb27-11e7-908d-9a450147acb6.png)
 
 ---
+---
 
 ## Caratteristiche I~DS~V~DS~ N-Channel JFET BF862
 
@@ -181,10 +182,11 @@ Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
 ![IV JFET results](https://user-images.githubusercontent.com/13961654/32105228-0cf079bc-bb28-11e7-9ff1-e61e2bfe9450.png)
 
 ---
+---
 
-## Curve CV e delta V condensatori.
+## Curve CV e δV condensatori.
 
-Si riportano le caratteristiche CV e delta δV dei seguenti tipi di condensatori:
+Si riportano le caratteristiche CV e delta δV (δ è il fattore di perdita) dei seguenti tipi di condensatori:
 
 - Condensatore ceramico SMD, capacità nominale: 22 µF.
 - Condensatore in poliestere THT, capacità nominale: 100 nF.
@@ -213,4 +215,21 @@ Per la polarizzazione dei condensatori rimanenti, è stata utilizzata la seguent
 
 Il circuito di misura utilizzato, comune a tutti i condensatori testati è il seguente:
 
+**Circuito di misura capacità condensatori**
 ![CV capacitors circuit](https://user-images.githubusercontent.com/13961654/32105558-2dc9a338-bb29-11e7-8dde-d3c6f71a1fb1.png)
+
+**Condensatore ceramico 22uF**
+![SMD ceramic 22u capacitor](https://user-images.githubusercontent.com/13961654/32105430-c18487ec-bb28-11e7-84f7-337240b704ca.png)
+
+**Condensatore in poliestere 100nF**
+![poliestere 100n capacitor](https://user-images.githubusercontent.com/13961654/32105431-c1adf460-bb28-11e7-93ea-be89ececde9a.png)
+
+**Condensatore ceramico HV 4.7nF**
+![HV ceramic 4.7n capacitor](https://user-images.githubusercontent.com/13961654/32105433-c1ee1586-bb28-11e7-8945-1966058a581c.png)
+
+**Condensatore X7R 100nF**
+![X7R 100n capacitor](https://user-images.githubusercontent.com/13961654/32105435-c2745286-bb28-11e7-81d5-a6601a1a456f.png)
+
+---
+---
+
