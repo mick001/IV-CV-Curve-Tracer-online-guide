@@ -4,6 +4,7 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 ![Intro image](https://user-images.githubusercontent.com/13961654/31069802-3e11ed88-a75e-11e7-806d-aac4084c591b.png)
 
 ---
+---
 
 ## What to do
 
@@ -13,10 +14,11 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 + Visualizzare [esempi di misure effettuate](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#esempi-di-misure-effettuate).
 
 ---
+---
 
 ## Cosa contiene questa guida
 
-+ **Impostazione della working directory.**
++ [**Impostazione della working directory.**](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#impostazione-della-working-directory-sezione-52-del-manuale)
 + **Tracciamento curva IV/CV semplice.**
 + **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione.**
 
