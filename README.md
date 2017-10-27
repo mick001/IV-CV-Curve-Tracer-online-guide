@@ -137,3 +137,45 @@ Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramen
 ---
 
 ## Esempi di misure effettuate
+
+Di seguito un elenco di misurazioni effettuate:
+
++ Caratteristica IV LED rosso 5 mm.
++ Caratteristiche I~DS~V~DS~ N-Channel JFET BF862
++ Curve CV e delta V condensatori.
++ Curve C~GS~V~GS~ e delta V~GS~ N-Channel JFET BF862 e 2N4416.
+
+---
+---
+
+## Caratteristica IV LED rosso 5 mm
+
+Si riportano i risultati del tracciamento di un tratto della caratteristica IV nel primo quadrante di un comune LED rosso 5 mm.
+La caratteristica è stata tracciata utilizzando le seguenti impostazioni:
+
+- Sorgente di tensione principale: Keithley 6430 (limite di corrente fissato a 20 mA).
+- Amperometro: Keithley 6430 in modalità autorange.
+- Tensione iniziale, tensione finale e variazione: 0.5, 1.7 e 0.01 V.
+- Numero punti media: 1 (singola misurazione).
+- Tempo di attesa: 1 s.
+
+![RED LED circuit](https://user-images.githubusercontent.com/13961654/32105534-1a9b9898-bb29-11e7-8a81-aa9f589b9aa3.png)
+![RED LED characteristic](https://user-images.githubusercontent.com/13961654/32105188-e44d7b5e-bb27-11e7-908d-9a450147acb6.png)
+
+---
+
+## Caratteristiche I~DS~V~DS~ N-Channel JFET BF862
+
+Si riportano i risultati del tracciamento di un tratto della caratteristica I~DS~V~DS~ al variare della tensione di polarizzazione V~GS~, nel primo quadrante del dispositivo N-Channel JFET BF862. Nella misura si è trascurata la corrente I~GS~.
+Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
+- Sorgente di tensione principale utilizzata per imporre la V~DS~: TTi QL355TP (limite di corrente fissato a 20 mA).
+- Vds iniziale, finale e sua variazione: 0, 10 e 0.1 V.
+- Sorgente di polarizzazione utilizzata per imporre la V~GS~: Yokogawa 7651 (limite di corrente fissato a 20 mA).
+- Vgs iniziale, finale e sua variazione: 0, -0.5 e 0.1 V.
+- Amperometro utilizzato per misurare la Ids: Keithley 6487 in modalità autorange. Prima di iniziare la misura è stata effettuata la zero correction (si ricorda che tale correzione è effettuata di default dal programma per gli amperometri). 
+- Numero punti media: 1 (singola misurazione).
+
+![IV JFET circuit](https://user-images.githubusercontent.com/13961654/32105546-252b2e18-bb29-11e7-8b5b-37d40de9e884.png)
+![IV JFET results](https://user-images.githubusercontent.com/13961654/32105228-0cf079bc-bb28-11e7-9ff1-e61e2bfe9450.png)
+
+---
