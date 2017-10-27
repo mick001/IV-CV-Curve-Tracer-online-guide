@@ -1,6 +1,8 @@
 # IV & CV Curve Tracer online guide
 A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 
+![Intro image](https://user-images.githubusercontent.com/13961654/31069802-3e11ed88-a75e-11e7-806d-aac4084c591b.png)
+
 ---
 
 ## What to do
