@@ -41,6 +41,7 @@ Se si desidera modificare la working directory, è necessario effettuare la segu
 
 
 [Torna a inizio pagina.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/)
+
 [Torna al menu "Cosa contiene questa guida".](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#cosa-contiene-questa-guida)
 
 ---
