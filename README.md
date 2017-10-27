@@ -19,8 +19,8 @@ A set of operational guides for the IV &amp; CV curve tracer (V. 2.0).
 ## Cosa contiene questa guida
 
 + [**Impostazione della working directory.**](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#impostazione-della-working-directory-sezione-52-del-manuale)
-+ **Tracciamento curva IV/CV semplice.**
-+ **Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione.**
++ [**Tracciamento curva IV/CV semplice.**](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#tracciamento-curva-ivcv-semplice-sezione-53-del-manuale)
++ [**Tracciamento curve IV/CV con l’applicazione di tensioni di polarizzazione.**](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#tracciamento-curve-ivcv-con-lapplicazione-di-tensioni-di-polarizzazione-sezione-54-del-manuale)
 
 ---
 ---
@@ -181,3 +181,36 @@ Le caratteristiche sono state tracciate utilizzando le seguenti impostazioni:
 ![IV JFET results](https://user-images.githubusercontent.com/13961654/32105228-0cf079bc-bb28-11e7-9ff1-e61e2bfe9450.png)
 
 ---
+
+## Curve CV e delta V condensatori.
+
+Si riportano le caratteristiche CV e delta δV dei seguenti tipi di condensatori:
+
+- Condensatore ceramico SMD, capacità nominale: 22 µF.
+- Condensatore in poliestere THT, capacità nominale: 100 nF.
+- Condensatore ceramico HV THT, capacità nominale: 4.7 nF.
+- Condensatore ceramico X7R, capacità nominale: 100 nF.
+
+Per lo strumento Agilent 4263B si sono adottate le seguenti impostazioni comuni a tutte le misure effettuate per i condensatori elencati sopra:
+
+- Livello segnale di test: 0.5 V.
+- Frequenza segnale di test: 1 kHz.
+- Numero punti media: 1 (misurazione singola).
+- Tempo di misura: 0.025 s (short).
+- Parametri misurati: CP e δ (capacità equivalente parallelo e fattore di perdita).
+- Lunghezza cavo di test considerata trascurabile.
+- Correzione open non effettuata.
+
+Per la polarizzazione del condensatore HV THT 4.7 nF è stata utilizzata la seguente sorgente di tensione principale:
+
+- ISEG NHQ223M (limite di corrente fissato pari a 4 mA).
+- Tensione di polarizzazione iniziale, finale e sua variazione: 0, 600 e 30 V.
+
+Per la polarizzazione dei condensatori rimanenti, è stata utilizzata la seguente sorgente di tensione principale:
+
+- Yokogawa 7651 (limite di corrente fissato pari a 10 mA).
+- Tensione di polarizzazione iniziale, finale e sua variazione: 0, 25 e 1 V.
+
+Il circuito di misura utilizzato, comune a tutti i condensatori testati è il seguente:
+
+![CV capacitors circuit](https://user-images.githubusercontent.com/13961654/32105558-2dc9a338-bb29-11e7-8dde-d3c6f71a1fb1.png)
