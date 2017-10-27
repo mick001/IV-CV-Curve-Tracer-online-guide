@@ -143,9 +143,9 @@ Anche in questo caso è possibile mettere in pausa oppure arrestare prematuramen
 Di seguito un elenco di misurazioni effettuate:
 
 + [Caratteristica IV LED rosso 5 mm.](caratteristica-iv-led-rosso-5-mm)
-+ [Caratteristiche Ids Vds N-Channel JFET BF862.]()
++ [Caratteristiche Ids Vds N-Channel JFET BF862.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-ids-vds-n-channel-jfet-bf862)
 + [Caratteristiche CV e δV condensatori realizzati in diversi materiali.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-cv-e-%CE%B4v-condensatori)
-+ [Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416.]()
++ [Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-cgs-vgs-e-%CE%B4vgs-n-channel-jfet-bf862-e-2n4416)
 
 ---
 ---
@@ -241,7 +241,40 @@ Il circuito di misura utilizzato, comune a tutti i condensatori testati è il se
 
 ## Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416
 
+Si è misurata la caratteristica CgsVgs al variare della tensione Vds. Si è cercato di misurare la caratteristica CgsVgs nelle condizioni di utilizzo del JFET: solitamente nei data sheet la capacità Cgs è misurata mantenendo la tensione Vds pari a 0, tuttavia può essere interessante e utile misurare tale capacità in una condizione più prossima a quella in cui il dispositivo viene effettivamente utilizzato.
+Si è effettuata una misura per il BF862, e due misure per il 2N4416 (una con il case mantenuto flottante e una con il case collegato a massa).
 
+La configurazione di misura dello strumento Agilent 4263B utilizzata per le tre misure è la seguente:
+
+- Livello segnale di test: 0.05 V.
+- Frequenza segnale di test: 100 kHz.
+- Numero punti media: 1 (misurazione singola).
+- Tempo di misura: 0.025 s (short).
+- Parametri misurati: CP e δ (capacità equivalente parallelo e fattore di perdita).
+
+La tensione Vgs è stata applicata utilizzando lo strumento Yokogawa 7651 con le seguenti impostazioni:
+
+- Limite di corrente fissato pari a 20 mA.
+- Tensione iniziale, finale e sua variazione: 0, 3 e 0.1 V (corrispondente a una Vgs iniziale e finale rispettivamente uguali a 0 e -3 V) per il BF862 e 0, 8 e 0.3 V (corrispondente a una Vgs iniziale e finale rispettivamente uguali a 0 e -8 V) per il 2N4416.
+
+La tensione Vds è stata applicata utilizzando lo strumento TTi QL355TP con le seguenti impostazioni:
+
+- Limite di corrente fissato pari a 20 mA.
+- Tensione iniziale, finale e sua variazione: 3, 0 e 0.1 V per il BF862 e 10, 0, e 0.3 V per il 2N4416.
+
+Questa misura ha presentato una notevole criticità per quanto riguarda la corretta applicazione della tensione Vgs: a causa della presenza della resistenza da 2000 Ω all’interno del dispositivo utilizzato per la misura, si verifica una caduta di tensione che altera la tensione sul nodo di source rispetto a quella applicata dalla sorgente Yokogawa 7651. Per far sì che la tensione di source sia quella richiesta, si è utilizzata la funzione sense dello Yokogawa 7651 che regola opportunamente la tensione in uscita dal generatore in modo che la tensione al nodo di sense (e quindi al source nel caso in esame) sia quella richiesta. Il filtro notch LCR (taglia banda) evita che la tensione sinusoidale di test arrivi al drain. La frequenza centrale del filtro taglia banda è 100 kHz. Il circuito per effettuare questa misura è stato preso da <sup>1</sup>.
+
+**Circuito di misura**
+![Circuito di misura](https://user-images.githubusercontent.com/13961654/32105576-3cdc67fc-bb29-11e7-82b1-72d7acb6c765.png)
+
+**Circuito di misura**
+![Circuito di misura 2](https://user-images.githubusercontent.com/13961654/32105577-3d05311e-bb29-11e7-8332-28db8ad0881a.jpg)
+
+**Caratteristiche Cgs Vgs e δVgs N-JFET BF862**
+![Risultati BF862](https://user-images.githubusercontent.com/13961654/32105443-cc8ccdfc-bb28-11e7-8530-600ea2063f2b.png)
+
+**Caratteristiche Cgs Vgs e δVgs N-JFET 2N4416**
+![Risultati 2N4416](https://user-images.githubusercontent.com/13961654/32105444-ccb61f7c-bb28-11e7-8677-e1d8cc74ec85.png)
 
 ---
 ---
