@@ -154,7 +154,7 @@ Torna al menu ["Cosa contiene questa guida".](https://mick001.github.io/IV-CV-Cu
 
 Di seguito un elenco di misurazioni effettuate:
 
-+ [Caratteristica IV LED rosso 5 mm.](caratteristica-iv-led-rosso-5-mm)
++ [Caratteristica IV LED rosso 5 mm.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristica-iv-led-rosso-5-mm)
 + [Caratteristiche Ids Vds N-Channel JFET BF862.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-ids-vds-n-channel-jfet-bf862)
 + [Caratteristiche CV e δV condensatori realizzati in diversi materiali.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-cv-e-%CE%B4v-condensatori)
 + [Caratteristiche Cgs Vgs e δVgs N-Channel JFET BF862 e 2N4416.](https://mick001.github.io/IV-CV-Curve-Tracer-online-guide/#caratteristiche-cgs-vgs-e-%CE%B4vgs-n-channel-jfet-bf862-e-2n4416)
