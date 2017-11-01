@@ -306,3 +306,5 @@ Torna al menu ["Esempi di misure effettuate".](https://mick001.github.io/IV-CV-C
 
 ---
 ---
+
+<sup>1</sup> Boggini, R., DIODI PIN e transistori JFET integrati su silicio ad alta resistività per la spettroscopia X ad alta risoluzione, Politecnico di Milano, tesi di laurea, Milano, anno accademico 2006-2007.
